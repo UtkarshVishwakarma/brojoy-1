@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bro Joy Memorence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="form-container">
+        <div class="head-image-container">
+            <div class="head">
+                <h1>Bro Joy Memorence</h1>
+                <h3 class="ev">Event Name</h3>
+            </div>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s" alt="Profile Image" class="circle-image">
+            </div>
+        </div>
+
+        <div class="cat">
+            <span>Category:</span>
+            <select id="age-category" class="dropdown">
+                <option value="under-19">Under 19</option>
+                <option value="under-17">Under 17</option>
+                <option value="under-14">Under 14</option>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table id="info-table">
+                <thead>
+                    <tr>
+                        <th>Track No</th>
+                        <th>Player Name</th>
+                        <th>Bib No</th>
+                        <th>School Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows for player information -->
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" class="input-field" placeholder="Enter Player Name" required></td>
+                        <td><input type="text" class="input-field" placeholder="Enter Bib No" required></td>
+                        <td>
+                            <select class="school-dropdown">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text" class="input-field" placeholder="Enter Player Name" required></td>
+                        <td><input type="text" class="input-field" placeholder="Enter Bib No" required></td>
+                        <td>
+                            <select class="school-dropdown">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text" class="input-field" placeholder="Enter Player Name" required></td>
+                        <td><input type="text" class="input-field" placeholder="Enter Bib No" required></td>
+                        <td>
+                            <select class="school-dropdown">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><input type="text" class="input-field" placeholder="Enter Player Name" required></td>
+                        <td><input type="text" class="input-field" placeholder="Enter Bib No" required></td>
+                        <td>
+                            <select class="school-dropdown">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><input type="text" class="input-field" placeholder="Enter Player Name" required></td>
+                        <td><input type="text" class="input-field" placeholder="Enter Bib No" required></td>
+                        <td>
+                            <select class="school-dropdown">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><input type="text" class="input-field" placeholder="Enter Player Name" required></td>
+                        <td><input type="text" class="input-field" placeholder="Enter Bib No" required></td>
+                        <td>
+                            <select class="school-dropdown">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="submit-btn-container">
+            <button class="submit-btn" onclick="submitInfo()">Submit</button>
+        </div>
+    </div>
+
+    <!-- Output Section -->
+    <div id="display-container" style="display:none;">
+        <h2 id="category-heading"></h2>
+        <table id="submitted-info-table" class="submitted-info-table">
+            <thead>
+                <tr>
+                    <th>Track No</th>
+                    <th>Player Name</th>
+                    <th>Bib No</th>
+                    <th>School Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Submitted information will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

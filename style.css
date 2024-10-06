@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.head-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Space between the head-image section and the dropdown */
+}
+
+/* Style for the headings */
+.head {
+    margin-right: 20px; /* Space between heading and image */
+    text-align: left;
+}
+
+/* Circular Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Container */
+.cat {
+    margin-top: 20px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    font-size: 1rem;
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Dropdown Hover & Focus Styles */
+.dropdown:hover,
+.dropdown:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.6);
+}
+
+/* Table container */
+.table-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 90%; /* Increased width of the main input table */
+    text-align: left;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Center align the new track numbers in the table */
+td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Input fields styling */
+.input-field {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+/* Dropdown styling */
+.school-dropdown {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.school-dropdown:hover,
+.school-dropdown:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.6);
+}
+
+/* Button Styling */
+.submit-btn-container {
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2c3e50;
+}
+
+/* Display Container Styles */
+#display-container {
+    margin-top: 40px;
+}
+
+.submitted-info-table {
+    width: 98%; /* Increased width of the submitted information table */
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 1.8rem; /* Increased font size for better readability */
+}
+
+.submitted-info-table th, .submitted-info-table td {
+    border: 1px solid #ddd;
+    padding: 25px; /* Increased padding for table cells */
+}
+
+.submitted-info-table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Heading for Category */
+#category-heading {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Increased font size for the category heading */
+    text-align: center;
+}
